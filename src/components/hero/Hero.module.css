@@ -1,0 +1,155 @@
+@import "../../vars.css";
+
+.outer {
+    overflow-x: clip;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 100px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 5000;
+    margin-bottom: 33px;
+    z-index: 1;
+    background: linear-gradient(90deg, #000000 80.05%, rgba(0, 0, 0, 0) 142.63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 85px;
+
+}
+
+.description {
+    font-size: 30px;
+    margin-bottom: 52px;
+}
+
+.resumeBtn {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 100px;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 20px;
+    box-shadow: 0 0 4px 0 rgba(255, 255, 255, .25);
+}
+
+.profilePic {
+    width: 50%;
+    z-index: 1;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }  
+
+.rotating{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    margin-top: 30px;
+    height:30px;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.rotating span{
+    position: relative;
+    animation: animation 10s ease infinite;
+}
+
+
+@keyframes animation {
+    0%,
+    100%{
+        top: 0;
+    }
+    20%{
+        top: 0;
+    }
+    25%{
+        top: -40px;
+    }
+    40%{
+        top: -40px;
+    }
+    45%{
+        top: -77px;
+    }
+    60%{
+        top: -77px;
+    }
+    65%{
+        top: -110px;
+    }
+    80%{
+        top: -110px;
+    }
+    85%{
+        top: -150px;
+    }
+}
+
+.topStar {
+
+    position: absolute;
+    left: -150px;
+    top: -50px;
+
+    z-index: 0;
+}
+
+.bottomStar {
+    position: absolute;
+    right: -25vw;
+    top: 246px;
+
+    z-index: 0;
+}
+
+@media screen and (max-width: 830px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .content {
+        align-items: center;
+        text-align: center;
+    }
+    .bottomStar {
+        position: absolute;
+        right: -50vw;
+        top: 246px;
+    
+        z-index: 0;
+    }
+}

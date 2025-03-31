@@ -1,0 +1,74 @@
+@import "../../vars.css";
+
+.container {
+    padding-top: 150px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 150px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.awards {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100;
+    list-style-type: none
+}
+
+.award {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(100deg, 
+        #2da241 0%,
+        #21732F 100%);
+    box-shadow: 0 16px 14px 0 #13481c;
+    padding: 18px 24px;
+    max-width: 345px;
+}
+
+.awardImage {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 26px;
+}
+
+.award h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.award p {
+    margin-top: 6px;
+}
+
+.media {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 100px;
+    background: var(--color-secondary);
+    padding: 1px 22px;
+    color: white;
+}
